@@ -41,8 +41,8 @@ h3 {
     left: 0;
     right: 0;
     margin: auto;
-    width: 54vw;
-    height: 15vw;
+    width: 53vw;
+    height: 17vw;
 }
 
 .header-title {
@@ -61,10 +61,8 @@ h3 {
     letter-spacing: 2px;
     font-weight: 400;
     font-size: 2.25vw;
-}
-
-.header-subtitle .space {
-    margin: 0 3px 0 0px;
+    margin-top: 1vw;
+    margin-bottom: 0;
 }
 
 .about {
