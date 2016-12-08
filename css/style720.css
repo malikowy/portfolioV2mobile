@@ -1,0 +1,91 @@
+/* SETTINGS FOR HD DISPLAYS */
+
+@media screen and (max-width: 1366px) {
+    header {
+        height: 660px;
+    }
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 660px;
+    }
+    .title {
+        top: 235px;
+    }
+    .subtitle {
+        top: 250px;
+    }
+    .contact .contact-form {
+        margin-left: 6%;
+    }
+    .contact .contact-list {
+        margin-right: 6%
+    }
+    .about {
+        height: 660px;
+    }
+    .about img {
+        float: left;
+        margin-left: 215px;
+        margin-right: 80px;
+        margin-top: 76px;
+    }
+    .about h3 {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    .about p {
+        margin-right: 100px;
+        text-align: justify;
+    }
+    .about button {
+        margin-top: 50px;
+    }
+    .about .rwd-line {
+        display: block;
+    }
+    .experience {
+        height: 660px;
+    }
+    .experience h2 {
+        margin-top: 0px;
+        padding-top: 45px;
+    }
+    .experience h3 {
+        margin-top: 45px;
+    }
+    .experience img {
+        margin: 0 10px 0 10px;
+    }
+    .works {
+        height: 660px;
+    }
+    #map {
+        height: 660px;
+    }
+    .contact {
+        height: 660px;
+    }
+    .contact .contact-form {
+        height: 571px;
+        margin-top: 60px;
+        margin-left: 6%;
+    }
+    .contact .contact-list {
+        width: 578px;
+        height: 571px;
+        margin-top: 60px;
+        margin-right: 6%;
+    }
+    .contact .contact-data {
+        margin-bottom: 17px;
+        width: 578px;
+        height: 179px;
+    }
+    textarea {
+        height: 125px;
+    }
+    footer {
+        height: 130px;
+    }
+}

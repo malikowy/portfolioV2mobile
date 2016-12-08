@@ -1,0 +1,4 @@
+1600x5985px
+kolor niebieski: rgba(94,184,178,1)
+kolor fioletowy: rgba(43,11,45,1)
+jasno biały rgba(192,182,192,1)
