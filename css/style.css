@@ -1,0 +1,126 @@
+html {
+    font-size: 62.5%;
+}
+
+html, body, p, th, td, li, dd, dt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.navigation-menu {
+    position: absolute;
+    text-align: center;
+}
+
+.header {
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+}
+
+.header-author {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 180px;
+    height: 60px;
+}
+
+.header-title {
+    border-top: 3px;
+    border-bottom: 3px;
+    border-style: solid none solid none;
+    color: rgba(255, 255, 255, 1);
+    padding: 5px 0 5px 0;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+.header-subtitle {
+    color: rgba(255, 255, 255, 1);
+    padding: 0;
+    letter-spacing: 2px;
+    font-weight: 400;
+    top: 95px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    font-size: 0.8rem;
+}
+
+.header-subtitle .space {
+    margin: 0 3px 0 0px;
+}
+
+.about {
+    padding: 20px 20px 40px 20px;
+}
+
+.about img {
+    display: none;
+}
+
+.btn-mail {
+    float: right;
+    background-color: rgba(255, 43, 74, 1);
+    border: 0;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    width: 100px;
+    height: 30px;
+    margin-top: 3px;
+    padding: 4px 8px 4px 8px;
+}
+
+.btn-mail a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.skills {
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.skills .skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills .skills-list li {
+    display: inline-block;
+}
+
+.tooltip-text {
+    display: none;
+}
+
+.responsive-img {
+    height: 6vh;
+    margin: 5px 5px 5px 5px;
+}
+
+.hidden {
+    display: none;
+}
