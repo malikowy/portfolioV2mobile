@@ -42,7 +42,7 @@ h3 {
     right: 0;
     margin: auto;
     width: 54vw;
-    height: 14vw;
+    height: 15vw;
 }
 
 .header-title {
@@ -51,7 +51,7 @@ h3 {
     border-style: solid none solid none;
     color: rgba(255, 255, 255, 1);
     padding: 4px 0 7px 0;
-    font-size: 7.15vw;
+    font-size: 7.10vw;
     margin: 0;
 }
 
