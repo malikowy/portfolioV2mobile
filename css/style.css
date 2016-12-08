@@ -41,8 +41,8 @@ h3 {
     left: 0;
     right: 0;
     margin: auto;
-    width: 185px;
-    height: 60px;
+    width: 54vw;
+    height: 8vh;
 }
 
 .header-title {
@@ -50,8 +50,8 @@ h3 {
     border-bottom: 3px;
     border-style: solid none solid none;
     color: rgba(255, 255, 255, 1);
-    padding: 5px 0 5px 0;
-    font-size: 2.3rem;
+    padding: 4px 0 7px 0;
+    font-size: 7.25vw;
     margin: 0;
 }
 
@@ -60,13 +60,7 @@ h3 {
     padding: 0;
     letter-spacing: 2px;
     font-weight: 400;
-    top: 95px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 184px;
-    font-size: 0.8rem;
+    font-size: 2.25vw;
 }
 
 .header-subtitle .space {
