@@ -23,12 +23,19 @@
               <li><a href="#skills">Umiejętności</a></li>
               <li><a href="#works">Portfolio</a></li>
               <li><a href="#contact">Kontakt</a></li>
+              <button type="button" title="Open menu" aria-level="navigation menu">
+                <div id="mobile-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+              </button>
           </ul>
       </nav>
         <header class="header" id="top">
           <div id="particles-js"></div>
           <div class="header-author">
-            <h1 class="header-title">Gabriel Ignatiuk</h1>
+            <h1 class="header-title">Gabriel&nbsp;Ignatiuk</h1>
             <h2 class="header-subtitle">#Front End Developer</h2>
             </div>
         </header>
@@ -156,6 +163,14 @@
             }
           }
         });
+        </script>
+        <!--  -->
+        <script>
+        $(document).ready(function(){
+$('#mobile-icon').click(function(){
+  $(this).toggleClass('open');
+});
+});
         </script>
         <!-- PARTICLES SCRIPT -->
         <script src="./js/particles.min.js"></script>
