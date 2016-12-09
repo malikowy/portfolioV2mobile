@@ -174,7 +174,7 @@
     height: 2px;
     -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
     transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 43, 74, 1);
 }
 
 .drawer-hamburger-icon:before, .drawer-hamburger-icon:after {
