@@ -10,136 +10,234 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
         <!-- <link href="./css/style1080.css" rel="stylesheet"> -->
         <!-- <link href="./style720.css" rel="stylesheet"> -->
-        <link href="./css/normalize.css" rel="stylesheet" />
-        <link href="./css/style.css" rel="stylesheet" />
+        <link href="./css/normalize.css" rel="stylesheet"/>
+        <link href="./css/style.css" rel="stylesheet"/>
+        <!-- Social icons -->
         <script src="https://use.fontawesome.com/dae1dff95d.js"></script>
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <!--  -->
         <!-- drawer.css -->
-<link rel="stylesheet" href="./css/drawer.css">
-<!-- jquery & iScroll -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
-<!-- drawer.js -->
-<script src="./js/drawer.min.js"></script>
+        <link rel="stylesheet" href="./css/drawer.css">
+        <!--  iScroll -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+        <!-- drawer.js -->
+        <script src="./js/drawer.min.js"></script>
     </head>
     <body class="drawer drawer--right">
-<!--  -->
-<header role="banner">
-  <button type="button" class="drawer-toggle drawer-hamburger">
-    <span class="sr-only">toggle navigation</span>
-    <span class="drawer-hamburger-icon"></span>
-  </button>
-  <nav class="drawer-nav" role="navigation">
-    <ul class="drawer-menu">
-      <li><a class="drawer-brand" href="#top">Menu / Do góry</a></li>
-      <li><a class="drawer-menu-item" href="#about">O mnie</a></li>
-      <li><a class="drawer-menu-item" href="#skills">Umiejętności</a></li>
-      <li><a class="drawer-menu-item" href="#works">Projekty</a></li>
-      <li><a class="drawer-menu-item" href="#contact">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
-      <!--  -->
-      <main class="main">
-        <section class="header" id="top">
-          <div id="particles-js"></div>
-          <div class="header-author">
-            <h1 class="header-title">Gabriel&nbsp;Ignatiuk</h1>
-            <h2 class="header-subtitle">#Front End Developer</h2>
-            </div>
-        </section>
-        <section class="about" id="about">
-            <img src="./img/statue.png">
-            <h3>Cześć, nazywam się Gabriel Ignatiuk i jestem Front End Developerem z Warszawy.</h3>
-            <p>Przygodę z tworzeniem stron internetowych rozpocząłem pod koniec piątej klasy podstawówki. Trwała ona około trzy lata po czym, jak każdy nastolatek, moje zainteresowania uległy zmianie. <span class="rwd-line">Nabyte umiejętności przydały mi się podczas tworzenia stron internetowych na zajęcia w szkole średniej, czy w tworzeniu strony firmowej dla przyjaciela opartej o framework Bootstrap 3.</span></p>
-            <p>Po dwóch latach przerwy wznowiłem działalność w temacie tworzenia stron internetowych. Początkowo przypominałem sobie nabyte wiadomości na temat HTML i CSS. Dodatkowo zagłębiłem się w HTML5 oraz CSS3. <span class="rwd-line">Kolejnym językiem, którego chciałbym się nauczyć jest JavaScript. Ponadto chciałbym korzystać z preprocesora SASS, a także SCSS.</span></p>
-            <button class="btn-mail"><a href="#contact">Napisz do mnie</a></button>
-        </section>
-        <section class="skills" id="skills">
-            <h2>Umiejętności</h2>
-            <!-- I KNOW how to use -->
-            <h3>Poznałem i wykorzystuję:</h3>
-            <ul class="skills-list">
-            <li><a class="tooltips" href="#"><img src="./img/icons/html5.png" alt="HTML5" class="responsive-img"><span class="tooltip-text">Dobrze</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/css3.png" alt="CSS3" class="responsive-img"><span class="tooltip-text">Dobrze</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/bootstrap.png" alt="Bootstrap" class="responsive-img"><span class="tooltip-text">Dobrze</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/git.png" alt="GitHub" class="responsive-img"><span class="tooltip-text">Średnio</span></a></li>
-            </ul>
-            <!-- TOOLS -->
-            <h3>Pracuję korzystając z:</h3>
-            <ul class="skills-list">
-            <li><a class="tooltips" href="#"><img src="./img/icons/atom.png" alt="Atom" class="responsive-img"><span class="tooltip-text">GitHub Atom</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/ps.png" alt="Photoshop" class="responsive-img"><span class="tooltip-text">Photoshop CC</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/chrome.png" alt="Google Chrome Dev" class="responsive-img"><span class="tooltip-text">Chrome Dev</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/mac.png" alt="MacOS" class="responsive-img"><span class="tooltip-text">Mac OS</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/pc.png" alt="PC" class="responsive-img"><span class="tooltip-text">PC</span></a></li>
-            </ul>
-            <!-- FOR FUTURE -->
-            <h3>Chcę opanować:</h3>
-            <ul class="skills-list">
-            <li><a class="tooltips" href="#"><img src="./img/icons/js.png" alt="JavaScript" class="responsive-img"><span class="tooltip-text">JavaScript</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/jquery.png" alt="jQuery" class="responsive-img"><span class="tooltip-text">jQuery</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/sass.png" alt="Sass" class="responsive-img"><span class="tooltip-text">Sass</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/node.png" alt="Node" class="responsive-img"><span class="tooltip-text">Node.js</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/angular.png" alt="Angular" class="responsive-img"><span class="tooltip-text">Angular</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/react.png" alt="React" class="responsive-img"><span class="tooltip-text">React</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/bower.png" alt="Bower" class="responsive-img"><span class="tooltip-text">Bower</span></a></li>
-            <li><a class="tooltips" href="#"><img src="./img/icons/gulp.png" alt="Gulp" class="responsive-img"><span class="tooltip-text">Gulp</span></a></li>
-            </ul>
-        </section>
-        <section id="works" class="works">
-            <div class="works-container hidden">
-                <h2>Projekty wykonane</h2>
-                <!-- GALLERY IMAGE DIMENSIONS 700X420 -->
-                <a href="https://github.com/malikowy/MRR" target="_blank" title="Strona dla firmy MRR" class="gallery rotate"><img src="./img/projects/mrr.png" alt="MRR page view" /></a>
-                <a href="https://github.com/malikowy/portfolio-page" target="_blank" title="Moja pierwsza strona portfolio" class="gallery rotate"><img src="./img/projects/portfolio.png" alt="My first portfolio page" /></a>
-                <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt="" /></a>
-                <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/5.jpg" alt="" /></a>
-                <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/6.jpg" alt="" /></a>
-                <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt="" /></a>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <!-- LEFT FORM -->
-            <div class="contact-form">
-                <h2>ZOSTAW WIADOMOŚĆ</h2>
-                <form>
-                    <input name="name" placeholder="Imię*">
-                    <input name="email" type="email" placeholder="Email*">
-                    <input name="subject" type="subject" placeholder="Temat*">
-                    <textarea name="message" placeholder="Treść*"></textarea>
-                    <input id="submit" name="submit" type="submit" value="Napisz do mnie">
-                </form>
-            </div>
-            <!-- RIGHT FORM -->
-            <div class="contact-list">
-                <div class="contact-data">
-                  <h2>DANE KONTAKTOWE</h2>
-                  <address class="vcard">
-                    <p>Gabriel Ignatiuk</p>
-                    <p>Wiosenna 27b</p>
-                    <p>05-092 Łomianki</p>
-                    <p>mazowsze, Polska</p>
-                    <p>Telefon: <span class="tel">600144708</span></p>
-                    <p>Email: <a class="email" href="mailto:gabriel.ignatiuk@gmail.com">gabriel.ignatiuk@gmail.com</a></p>
-                  </address>
+        <header role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li>
+                        <a class="drawer-brand" href="#top">Do góry</a>
+                    </li>
+                    <li>
+                        <a class="drawer-menu-item" href="#about">O mnie</a>
+                    </li>
+                    <li>
+                        <a class="drawer-menu-item" href="#skills">Umiejętności</a>
+                    </li>
+                    <li>
+                        <a class="drawer-menu-item" href="#works">Projekty</a>
+                    </li>
+                    <li>
+                        <a class="drawer-menu-item" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="header" id="top">
+                <div id="particles-js"></div>
+                <div class="header-author">
+                    <h1 class="header-title">Gabriel&nbsp;Ignatiuk</h1>
+                    <h2 class="header-subtitle">#Front End Developer</h2>
                 </div>
-                <div class="contact-data">
-                  <h2>SERWISY SPOŁECZNOŚCIOWE</h2>
+            </section>
+            <section class="about" id="about">
+                <img src="./img/statue.png">
+                <h3>Cześć, nazywam się Gabriel Ignatiuk i jestem Front End Developerem z Warszawy.</h3>
+                <p>Przygodę z tworzeniem stron internetowych rozpocząłem pod koniec piątej klasy podstawówki. Trwała ona około trzy lata po czym, jak każdy nastolatek, moje zainteresowania uległy zmianie.
+                    <span class="rwd-line">Nabyte umiejętności przydały mi się podczas tworzenia stron internetowych na zajęcia w szkole średniej, czy w tworzeniu strony firmowej dla przyjaciela opartej o framework Bootstrap 3.</span>
+                </p>
+                <p>Po dwóch latach przerwy wznowiłem działalność w temacie tworzenia stron internetowych. Początkowo przypominałem sobie nabyte wiadomości na temat HTML i CSS. Dodatkowo zagłębiłem się w HTML5 oraz CSS3.
+                    <span class="rwd-line">Kolejnym językiem, którego chciałbym się nauczyć jest JavaScript. Ponadto chciałbym korzystać z preprocesora SASS, a także SCSS.</span>
+                </p>
+                <button class="btn-mail">
+                    <a href="#contact">Napisz do mnie</a>
+                </button>
+            </section>
+            <section class="skills" id="skills">
+                <h2>Umiejętności</h2>
+                <!-- I KNOW how to use -->
+                <h3>Poznałem i wykorzystuję:</h3>
+                <ul class="skills-list">
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/html5.png" alt="HTML5" class="responsive-img">
+                            <span class="tooltip-text">Dobrze</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/css3.png" alt="CSS3" class="responsive-img">
+                            <span class="tooltip-text">Dobrze</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/bootstrap.png" alt="Bootstrap" class="responsive-img">
+                            <span class="tooltip-text">Dobrze</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/git.png" alt="GitHub" class="responsive-img">
+                            <span class="tooltip-text">Średnio</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- TOOLS -->
+                <h3>Pracuję korzystając z:</h3>
+                <ul class="skills-list">
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/atom.png" alt="Atom" class="responsive-img">
+                            <span class="tooltip-text">GitHub Atom</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/ps.png" alt="Photoshop" class="responsive-img">
+                            <span class="tooltip-text">Photoshop CC</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/chrome.png" alt="Google Chrome Dev" class="responsive-img">
+                            <span class="tooltip-text">Chrome Dev</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/mac.png" alt="MacOS" class="responsive-img">
+                            <span class="tooltip-text">Mac OS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/pc.png" alt="PC" class="responsive-img">
+                            <span class="tooltip-text">PC</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- FOR FUTURE -->
+                <h3>Chcę opanować:</h3>
+                <ul class="skills-list">
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/js.png" alt="JavaScript" class="responsive-img">
+                            <span class="tooltip-text">JavaScript</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/jquery.png" alt="jQuery" class="responsive-img">
+                            <span class="tooltip-text">jQuery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/sass.png" alt="Sass" class="responsive-img">
+                            <span class="tooltip-text">Sass</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/node.png" alt="Node" class="responsive-img">
+                            <span class="tooltip-text">Node.js</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/angular.png" alt="Angular" class="responsive-img">
+                            <span class="tooltip-text">Angular</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/react.png" alt="React" class="responsive-img">
+                            <span class="tooltip-text">React</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/bower.png" alt="Bower" class="responsive-img">
+                            <span class="tooltip-text">Bower</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><img src="./img/icons/gulp.png" alt="Gulp" class="responsive-img">
+                            <span class="tooltip-text">Gulp</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="works" class="works">
+                <div class="works-container hidden">
+                    <h2>Projekty wykonane</h2>
+                    <!-- GALLERY IMAGE DIMENSIONS 700X420 -->
+                    <a href="https://github.com/malikowy/MRR" target="_blank" title="Strona dla firmy MRR" class="gallery rotate"><img src="./img/projects/mrr.png" alt="MRR page view"/></a>
+                    <a href="https://github.com/malikowy/portfolio-page" target="_blank" title="Moja pierwsza strona portfolio" class="gallery rotate"><img src="./img/projects/portfolio.png" alt="My first portfolio page"/></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt=""/></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/5.jpg" alt=""/></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/6.jpg" alt=""/></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt=""/></a>
                 </div>
-            </div>
-            <div class="contact-map" id="map"></div>
-        </section>
-        <footer>
-            <a href="https://www.linkedin.com/in/gabrielignatiuk"><i class="fa faborder fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-            <a href="https://github.com/malikowy"><i class="fa faborder fa-github fa-2x" aria-hidden="true"></i></a>
-            <a href="http://stackoverflow.com/users/4749832/malikowy"><i class="fa faborder fa-stack-overflow fa-2x" aria-hidden="true"></i></a>
-            <a href="http://facebook.com/gabrielignatiuk"><i class="fa faborder fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-            <a href="https://plus.google.com/102438188261981760132"><i class="fa faborder fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
-            <a href="http://twitter.com/malikowy"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-            <p>Copyright &copy; Gabriel Ignatiuk. All rights reserved.</p>
-        </footer>
+            </section>
+            <section class="contact" id="contact">
+                <!-- LEFT FORM -->
+                <div class="contact-form">
+                    <h2>ZOSTAW WIADOMOŚĆ</h2>
+                    <form>
+                        <input name="name" placeholder="Imię*">
+                        <input name="email" type="email" placeholder="Email*">
+                        <input name="subject" type="subject" placeholder="Temat*">
+                        <textarea name="message" placeholder="Treść*"></textarea>
+                        <input id="submit" name="submit" type="submit" value="Napisz do mnie">
+                    </form>
+                </div>
+                <!-- RIGHT FORM -->
+                <div class="contact-list">
+                    <div class="contact-data">
+                        <h2>DANE KONTAKTOWE</h2>
+                        <address class="vcard">
+                            <p>Gabriel Ignatiuk</p>
+                            <p>Wiosenna 27b</p>
+                            <p>05-092 Łomianki</p>
+                            <p>mazowsze, Polska</p>
+                            <p>Telefon:
+                                <span class="tel">600144708</span>
+                            </p>
+                            <p>Email:
+                                <a class="email" href="mailto:gabriel.ignatiuk@gmail.com">gabriel.ignatiuk@gmail.com</a>
+                            </p>
+                        </address>
+                    </div>
+                    <div class="contact-data">
+                        <h2>SERWISY SPOŁECZNOŚCIOWE</h2>
+                    </div>
+                </div>
+                <div class="contact-map" id="map"></div>
+            </section>
+            <footer>
+                <a href="https://www.linkedin.com/in/gabrielignatiuk">
+                    <i class="fa faborder fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/malikowy">
+                    <i class="fa faborder fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="http://stackoverflow.com/users/4749832/malikowy">
+                    <i class="fa faborder fa-stack-overflow fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="http://facebook.com/gabrielignatiuk">
+                    <i class="fa faborder fa-facebook-square fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://plus.google.com/102438188261981760132">
+                    <i class="fa faborder fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="http://twitter.com/malikowy">
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <p>Copyright &copy; Gabriel Ignatiuk. All rights reserved.</p>
+            </footer>
         </main>
         <!-- GOOGLE MAPS -->
         <script>
@@ -152,35 +250,33 @@
                     zoom: 9,
                     center: uluru
                 });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
+                var marker = new google.maps.Marker({position: uluru, map: map});
             }
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR7Nf5SnRIpKL8Byci1G6n4HI9cD3cIbk&callback=initMap">
-        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR7Nf5SnRIpKL8Byci1G6n4HI9cD3cIbk&callback=initMap"></script>
         <!-- SMOOTH SCROLL -->
         <script>
-        $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length
+                        ? target
+                        : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
         </script>
         <!--  -->
         <script>
-        $(document).ready(function() {
-  $('.drawer').drawer();
-});
-</script>
+            $(document).ready(function() {
+                $('.drawer').drawer();
+            });
+        </script>
         <!-- PARTICLES SCRIPT -->
         <script src="./js/particles.min.js"></script>
         <script src="./js/app.js"></script>
