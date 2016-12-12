@@ -29,7 +29,7 @@
         <header class="drawer-navbar drawer-navbar--fixed" role="banner">
             <div class="drawer-container">
                 <div class="drawer-navbar-header">
-                    <a class="drawer-brand" href="#top">#Do góry</a>
+                    <a class="drawer-brand scrollTo" href="#top">#Do góry</a>
                     <button type="button" class="drawer-toggle drawer-hamburger">
                       <span class="sr-only">toggle navigation</span>
                       <span class="drawer-hamburger-icon"></span>
@@ -38,16 +38,16 @@
                 <nav class="drawer-nav" role="navigation" id="menu-center">
                     <ul class="drawer-menu ">
                         <li>
-                            <a class="drawer-menu-item" href="#about">#O mnie</a>
+                            <a class="drawer-menu-item scrollTo" href="#about">#O mnie</a>
                         </li>
                         <li>
-                            <a class="drawer-menu-item" href="#skills">#Umiejętności</a>
+                            <a class="drawer-menu-item scrollTo" href="#skills">#Umiejętności</a>
                         </li>
                         <li>
-                            <a class="drawer-menu-item" href="#works">#Projekty</a>
+                            <a class="drawer-menu-item scrollTo" href="#works">#Projekty</a>
                         </li>
                         <li>
-                            <a class="drawer-menu-item" href="#contact">#Kontakt</a>
+                            <a class="drawer-menu-item scrollTo" href="#contact">#Kontakt</a>
                         </li>
                     </ul>
                 </nav>
@@ -64,11 +64,11 @@
             <section class="about" id="about">
                 <img src="./img/statue.png">
                 <h3>Cześć, nazywam się Gabriel Ignatiuk i jestem Junior Front End Developerem z Warszawy.</h3>
-                <p>Przygodę z tworzeniem stron internetowych rozpocząłem pod koniec piątej klasy podstawówki. Trwała ona około trzy lata po czym, jak każdy nastolatek, moje zainteresowania uległy zmianie.
-                    <span class="rwd-line">Nabyte umiejętności przydały mi się podczas tworzenia stron internetowych na zajęcia w szkole średniej, czy w tworzeniu strony firmowej dla przyjaciela opartej o framework Bootstrap 3.</span>
+                <p>Przygodę z tworzeniem stron internetowych rozpocząłem pod koniec piątej klasy podstawówki. Trwała ona około trzy lata po czym, jak każdy nastolatek, moje zainteresowania uległy zmianie. Nabyte umiejętności przydały mi się podczas tworzenia
+                    stron internetowych na zajęcia w szkole średniej, czy w tworzeniu strony firmowej dla przyjaciela opartej o framework Bootstrap 3.
                 </p>
-                <p>Po dwóch latach przerwy wznowiłem działalność w temacie tworzenia stron internetowych. Początkowo przypominałem sobie nabyte wiadomości na temat HTML i CSS. Dodatkowo zagłębiłem się w HTML5 oraz CSS3.
-                    <span class="rwd-line">Kolejnym językiem, którego chciałbym się nauczyć jest JavaScript. Ponadto chciałbym korzystać z preprocesora SASS, a także SCSS.</span>
+                <p>Po dwóch latach przerwy wznowiłem działalność w temacie tworzenia stron internetowych. Początkowo przypominałem sobie nabyte wiadomości na temat HTML i CSS. Dodatkowo zagłębiłem się w HTML5 oraz CSS3. Kolejnym językiem, którego chciałbym
+                    się nauczyć jest JavaScript. Ponadto chciałbym korzystać z preprocesora SASS, a także SCSS.
                 </p>
                 <button class="btn-mail">
                     <a href="#contact">#Kontakt</a>
@@ -204,75 +204,69 @@
                         </address>
                     </div>
                 </div>
-                <div class="contact-map" id="map"></div>
             </section>
             <footer>
-                <a href="https://www.linkedin.com/in/gabrielignatiuk">
-                    <i class="fa faborder fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/malikowy">
-                    <i class="fa faborder fa-github fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="http://stackoverflow.com/users/4749832/malikowy">
-                    <i class="fa faborder fa-stack-overflow fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="http://facebook.com/gabrielignatiuk">
-                    <i class="fa faborder fa-facebook-square fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="https://plus.google.com/102438188261981760132">
-                    <i class="fa faborder fa-google-plus-square fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="http://twitter.com/malikowy">
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                </a>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabrielignatiuk" aria-label="LinkedIn"><i class="fa faborder fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/malikowy" aria-label="GitHub"><i class="fa faborder fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://stackoverflow.com/users/4749832/malikowy" aria-label="Stack overflow"><i class="fa faborder fa-stack-overflow fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com/gabrielignatiuk" aria-label="Facebook"><i class="fa faborder fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/102438188261981760132" aria-label="Google+"><i class="fa faborder fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/malikowy" aria-label="Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
                 <p>Copyright &copy; Gabriel Ignatiuk. All rights reserved.</p>
             </footer>
         </main>
-        <!-- GOOGLE MAPS -->
-        <script>
-            function initMap() {
-                var uluru = {
-                    lat: 52.333836,
-                    lng: 20.887125
-                };
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 9,
-                    center: uluru
-                });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
-            }
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR7Nf5SnRIpKL8Byci1G6n4HI9cD3cIbk&callback=initMap"></script>
         <!-- SMOOTH SCROLL -->
         <script>
-            $('a[href*="#"]:not([href="#"])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ?
-                        target :
-                        $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
+            (function($) {
+                'use strict';
+                // Można sprawdzić, czy scroll-behavior jest obsługiwane i jedynie wówczas dopinać skrypt
+                // if ( ! ( 'scroll-behavior' in getComputedStyle( document.documentElement ) ) ) {
+                // return;
+                // }
+
+                $('.scrollTo').on('click', function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('html, body').animate({
+                        scrollTop: $(href).offset().top + 'px'
+                    }, 1500, function() {
+                        // Dodajemy hash do adresu
+                        location.hash = href;
+                    });
+                });
+
+            }(jQuery));
         </script>
-        <!--  -->
         <script>
             $(document).ready(function() {
                 $('.drawer').drawer();
             });
         </script>
-        <!-- menu active  -->
         <!-- PARTICLES SCRIPT -->
         <script src="./js/particles.min.js"></script>
         <script src="./js/app.js"></script>
     </body>
+
+</html>
 
 </html>

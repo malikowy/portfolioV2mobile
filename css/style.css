@@ -1,15 +1,23 @@
+* {
+    scroll-behavior: smooth;
+}
+
 html, body, p, th, td, li, dd, dt {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
+}
+
+h2 {
+    font-weight: 900;
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .header {
@@ -62,14 +70,6 @@ h3 {
     padding: 20px 20px 40px 20px;
 }
 
-.about h2 {
-    font-weight: 900;
-}
-
-.about h3 {
-    font-weight: 700;
-}
-
 .about p {
     text-align: justify;
 }
@@ -100,6 +100,7 @@ h3 {
 .skills {
     padding: 20px 20px 20px 20px;
     text-align: center;
+    background-color: rgba(246, 246, 246, 1);
 }
 
 .skills .skills-list {
@@ -124,6 +125,41 @@ h3 {
     display: none;
 }
 
+.works {
+    background-color: rgba(100, 203, 192, 1);
+    text-align: center;
+}
+
+.contact {
+    background-image: url(./src/images/header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(34, 34, 34, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
 
 /*pierwsza rozdzielczość dla której widać navbar 1024px szer */
 
@@ -131,7 +167,4 @@ h3 {
     .header-author {
         width: 45vw;
     }
-}
-
-
 }
