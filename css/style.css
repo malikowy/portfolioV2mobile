@@ -207,4 +207,86 @@ footer p {
         width: 7vw;
         height: 2.4vw;
     }
+    .skills {
+        height: 35vw;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .works {
+        height: 35vw;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .works-container {
+        width: 75vw;
+    }
+    /* GALLERY SETTINGS */
+    .gallery {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border: 1em solid #fff;
+        background: #111;
+        max-width: 100%;
+        margin: 10px;
+        width: 18vw;
+        height: 10vw;
+    }
+    .gallery img {
+        display: block;
+        -webkit-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
+        width: 20vw;
+    }
+    .gallery:before, .gallery:after {
+        content: '';
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        -webkit-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
+        width: 100%;
+    }
+    .gallery.rotate:before {
+        background: rgba(100, 203, 192, .5);
+        top: 0;
+        left: 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+    .gallery.rotate:after {
+        content: "\f09b";
+        color: #fff;
+        font-family: FontAwesome;
+        font-size: 2em;
+        background: rgba(100, 203, 192, .9);
+        top: 50%;
+        left: 50%;
+        width: 2em;
+        height: 2em;
+        margin: -1em 0 0 -1em;
+        line-height: 2em;
+        -webkit-transform-origin: -4em -4em;
+        transform-origin: -4em -4em;
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+    .gallery.rotate.left:before, .gallery.rotate.left:after {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+    .gallery.rotate:hover:before, .gallery.rotate:hover:after {
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+    /* GALLERY SETTINGS END*/
+    .hidden {
+        display: inline-block;
+    }
+    .contact {
+        height: 35vw;
+        padding-top: 60px;
+    }
 }
