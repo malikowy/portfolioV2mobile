@@ -16,31 +16,32 @@
     z-index: 101;
     top: 0;
     overflow: hidden;
-    width: 23vw;
-    height: 50vw;
-    color: black;
-    background-color: rgba(255, 255, 255, 1);
+    width: 16.25rem;
+    height: 100%;
+    color: #222;
+    background-color: #fff;
 }
 
 .drawer-brand {
-    font-size: 3vw;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 3.75rem;
     display: block;
     padding-right: .75rem;
     padding-left: .75rem;
     text-decoration: none;
-    color: black;
+    color: #222;
 }
 
 .drawer-menu {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 .drawer-menu-item {
-    font-size: 2vw;
+    font-size: 1rem;
     display: block;
     padding: .75rem;
     text-decoration: none;
@@ -100,7 +101,7 @@
 \*!------------------------------------*/
 
 .drawer--left .drawer-nav {
-    left: -23vw;
+    left: -16.25rem;
     -webkit-transition: left .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
     transition: left .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
@@ -110,7 +111,7 @@
 }
 
 .drawer--left.drawer-open .drawer-hamburger {
-    left: 23vw;
+    left: 16.25rem;
 }
 
 
@@ -119,7 +120,7 @@
 \*!------------------------------------*/
 
 .drawer--right .drawer-nav {
-    right: -23vw;
+    right: -16.25rem;
     -webkit-transition: right .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
     transition: right .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
@@ -129,7 +130,7 @@
 }
 
 .drawer--right.drawer-open .drawer-hamburger {
-    right: 21vw;
+    right: 16.25rem;
 }
 
 
@@ -145,8 +146,8 @@
     box-sizing: content-box;
     width: 2rem;
     padding: 0;
-    padding-top: 3vw;
-    padding-right: 4vw;
+    padding-top: 18px;
+    padding-right: .75rem;
     padding-bottom: 30px;
     padding-left: .75rem;
     -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -174,7 +175,7 @@
     height: 2px;
     -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
     transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    background-color: rgba(255, 43, 74, 1);
+    background-color: #222;
 }
 
 .drawer-hamburger-icon:before, .drawer-hamburger-icon:after {
@@ -198,13 +199,11 @@
 
 .drawer-open .drawer-hamburger-icon:before {
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .drawer-open .drawer-hamburger-icon:after {
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -267,7 +266,6 @@
     .drawer--sidebar .drawer-nav {
         display: block;
         -webkit-transform: none;
-        -ms-transform: none;
         transform: none;
         position: fixed;
         width: 12.5rem;
@@ -297,13 +295,13 @@
 
 @media (min-width: 75em) {
     .drawer--sidebar .drawer-nav {
-        width: 23vw;
+        width: 16.25rem;
     }
     .drawer--sidebar.drawer--left .drawer-contents {
-        margin-left: 23vw;
+        margin-left: 16.25rem;
     }
     .drawer--sidebar.drawer--right .drawer-contents {
-        margin-right: 23vw;
+        margin-right: 16.25rem;
     }
     /*! container */
     .drawer--sidebar .drawer-container {
@@ -365,7 +363,7 @@
 }
 
 .drawer-navbar .drawer-menu {
-    padding-bottom: 7.5rem;
+    padding-bottom: 0.5rem;
 }
 
 @media (min-width: 64em) {
@@ -412,7 +410,7 @@
     /*! dropdown */
     .drawer-navbar .drawer-dropdown-menu {
         position: absolute;
-        width: 23vw;
+        width: 16.25rem;
         border: 1px solid #ddd;
     }
     .drawer-navbar .drawer-dropdown-menu-item {
@@ -475,7 +473,6 @@
     transition: transform .2s ease, opacity .2s ease;
     transition: transform .2s ease, opacity .2s ease, -webkit-transform .2s ease;
     -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     vertical-align: middle;
     border-top: 4px solid;
@@ -488,7 +485,6 @@
 
 .drawer-dropdown.open .drawer-caret {
     -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 

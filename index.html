@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
     <head>
         <meta charset="utf-8">
         <title>Gabriel Ignatiuk - Strona Portfolio</title>
@@ -10,8 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
         <!-- <link href="./css/style1080.css" rel="stylesheet"> -->
         <!-- <link href="./style720.css" rel="stylesheet"> -->
-        <link href="./css/normalize.css" rel="stylesheet"/>
-        <link href="./css/style.css" rel="stylesheet"/>
+        <link href="./css/normalize.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet" />
         <!-- Social icons -->
         <script src="https://use.fontawesome.com/dae1dff95d.js"></script>
         <!-- jQuery -->
@@ -23,43 +24,46 @@
         <!-- drawer.js -->
         <script src="./js/drawer.min.js"></script>
     </head>
-    <body class="drawer drawer--right">
-        <header role="banner">
-            <button type="button" class="drawer-toggle drawer-hamburger">
-                <span class="sr-only">toggle navigation</span>
-                <span class="drawer-hamburger-icon"></span>
-            </button>
-            <nav class="drawer-nav" role="navigation">
-                <ul class="drawer-menu">
-                    <li>
-                        <a class="drawer-brand" href="#top">Do góry</a>
-                    </li>
-                    <li>
-                        <a class="drawer-menu-item" href="#about">O mnie</a>
-                    </li>
-                    <li>
-                        <a class="drawer-menu-item" href="#skills">Umiejętności</a>
-                    </li>
-                    <li>
-                        <a class="drawer-menu-item" href="#works">Projekty</a>
-                    </li>
-                    <li>
-                        <a class="drawer-menu-item" href="#contact">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
+
+    <body class="drawer drawer--top drawer--navbarTopGutter" id="top">
+        <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+            <div class="drawer-container">
+                <div class="drawer-navbar-header">
+                    <a class="drawer-brand" href="#top">#Do góry</a>
+                    <button type="button" class="drawer-toggle drawer-hamburger">
+                      <span class="sr-only">toggle navigation</span>
+                      <span class="drawer-hamburger-icon"></span>
+                    </button>
+                </div>
+                <nav class="drawer-nav" role="navigation">
+                    <ul class="drawer-menu ">
+                        <li>
+                            <a class="drawer-menu-item" href="#about">#O mnie</a>
+                        </li>
+                        <li>
+                            <a class="drawer-menu-item" href="#skills">#Umiejętności</a>
+                        </li>
+                        <li>
+                            <a class="drawer-menu-item" href="#works">#Projekty</a>
+                        </li>
+                        <li>
+                            <a class="drawer-menu-item" href="#contact">#Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="main">
-            <section class="header" id="top">
+            <section class="header">
                 <div id="particles-js"></div>
                 <div class="header-author">
                     <h1 class="header-title">Gabriel&nbsp;Ignatiuk</h1>
-                    <h2 class="header-subtitle">#Front End Developer</h2>
+                    <h2 class="header-subtitle">#Junior Front End Developer</h2>
                 </div>
             </section>
             <section class="about" id="about">
                 <img src="./img/statue.png">
-                <h3>Cześć, nazywam się Gabriel Ignatiuk i jestem Front End Developerem z Warszawy.</h3>
+                <h3>Cześć, nazywam się Gabriel Ignatiuk i jestem Junior Front End Developerem z Warszawy.</h3>
                 <p>Przygodę z tworzeniem stron internetowych rozpocząłem pod koniec piątej klasy podstawówki. Trwała ona około trzy lata po czym, jak każdy nastolatek, moje zainteresowania uległy zmianie.
                     <span class="rwd-line">Nabyte umiejętności przydały mi się podczas tworzenia stron internetowych na zajęcia w szkole średniej, czy w tworzeniu strony firmowej dla przyjaciela opartej o framework Bootstrap 3.</span>
                 </p>
@@ -67,13 +71,13 @@
                     <span class="rwd-line">Kolejnym językiem, którego chciałbym się nauczyć jest JavaScript. Ponadto chciałbym korzystać z preprocesora SASS, a także SCSS.</span>
                 </p>
                 <button class="btn-mail">
-                    <a href="#contact">Napisz do mnie</a>
+                    <a href="#contact">#Kontakt</a>
                 </button>
             </section>
             <section class="skills" id="skills">
-                <h2>Umiejętności</h2>
+                <h2>#Umiejętności</h2>
                 <!-- I KNOW how to use -->
-                <h3>Poznałem i wykorzystuję:</h3>
+                <h3>#Poznałem i wykorzystuję:</h3>
                 <ul class="skills-list">
                     <li>
                         <a class="tooltips" href="#"><img src="./img/icons/html5.png" alt="HTML5" class="responsive-img">
@@ -97,7 +101,7 @@
                     </li>
                 </ul>
                 <!-- TOOLS -->
-                <h3>Pracuję korzystając z:</h3>
+                <h3>#Pracuję korzystając z:</h3>
                 <ul class="skills-list">
                     <li>
                         <a class="tooltips" href="#"><img src="./img/icons/atom.png" alt="Atom" class="responsive-img">
@@ -126,7 +130,7 @@
                     </li>
                 </ul>
                 <!-- FOR FUTURE -->
-                <h3>Chcę opanować:</h3>
+                <h3>#Chcę opanować:</h3>
                 <ul class="skills-list">
                     <li>
                         <a class="tooltips" href="#"><img src="./img/icons/js.png" alt="JavaScript" class="responsive-img">
@@ -172,29 +176,17 @@
             </section>
             <section id="works" class="works">
                 <div class="works-container hidden">
-                    <h2>Projekty wykonane</h2>
+                    <h2>#Projekty wykonane</h2>
                     <!-- GALLERY IMAGE DIMENSIONS 700X420 -->
-                    <a href="https://github.com/malikowy/MRR" target="_blank" title="Strona dla firmy MRR" class="gallery rotate"><img src="./img/projects/mrr.png" alt="MRR page view"/></a>
-                    <a href="https://github.com/malikowy/portfolio-page" target="_blank" title="Moja pierwsza strona portfolio" class="gallery rotate"><img src="./img/projects/portfolio.png" alt="My first portfolio page"/></a>
-                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt=""/></a>
-                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/5.jpg" alt=""/></a>
-                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/6.jpg" alt=""/></a>
-                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt=""/></a>
+                    <a href="https://github.com/malikowy/MRR" target="_blank" title="Strona dla firmy MRR" class="gallery rotate"><img src="./img/projects/mrr.png" alt="MRR page view" /></a>
+                    <a href="https://github.com/malikowy/portfolio-page" target="_blank" title="Moja pierwsza strona portfolio" class="gallery rotate"><img src="./img/projects/portfolio.png" alt="My first portfolio page" /></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt="" /></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/5.jpg" alt="" /></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/6.jpg" alt="" /></a>
+                    <a href="#" title="Lorem ipsum" class="gallery rotate"><img src="./img/7.jpg" alt="" /></a>
                 </div>
             </section>
             <section class="contact" id="contact">
-                <!-- LEFT FORM -->
-                <div class="contact-form">
-                    <h2>ZOSTAW WIADOMOŚĆ</h2>
-                    <form>
-                        <input name="name" placeholder="Imię*">
-                        <input name="email" type="email" placeholder="Email*">
-                        <input name="subject" type="subject" placeholder="Temat*">
-                        <textarea name="message" placeholder="Treść*"></textarea>
-                        <input id="submit" name="submit" type="submit" value="Napisz do mnie">
-                    </form>
-                </div>
-                <!-- RIGHT FORM -->
                 <div class="contact-list">
                     <div class="contact-data">
                         <h2>DANE KONTAKTOWE</h2>
@@ -210,9 +202,6 @@
                                 <a class="email" href="mailto:gabriel.ignatiuk@gmail.com">gabriel.ignatiuk@gmail.com</a>
                             </p>
                         </address>
-                    </div>
-                    <div class="contact-data">
-                        <h2>SERWISY SPOŁECZNOŚCIOWE</h2>
                     </div>
                 </div>
                 <div class="contact-map" id="map"></div>
@@ -250,7 +239,10 @@
                     zoom: 9,
                     center: uluru
                 });
-                var marker = new google.maps.Marker({position: uluru, map: map});
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
             }
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR7Nf5SnRIpKL8Byci1G6n4HI9cD3cIbk&callback=initMap"></script>
@@ -259,9 +251,9 @@
             $('a[href*="#"]:not([href="#"])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
-                    target = target.length
-                        ? target
-                        : $('[name=' + this.hash.slice(1) + ']');
+                    target = target.length ?
+                        target :
+                        $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html, body').animate({
                             scrollTop: target.offset().top
