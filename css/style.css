@@ -143,16 +143,17 @@ h3 {
 footer {
     background-color: rgba(34, 34, 34, 1);
     color: rgba(255, 255, 255, 1);
+    text-align: center;
 }
 
 footer ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 footer ul li {
     display: inline;
-    margin: 0;
-    padding: 0;
 }
 
 footer a {
@@ -160,11 +161,50 @@ footer a {
     text-decoration: none;
 }
 
+footer p {
+    margin-bottom: 0;
+}
+
 
 /*pierwsza rozdzielczość dla której widać navbar 1024px szer */
 
 @media (min-width: 64em) {
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.3vw;
+    }
     .header-author {
         width: 45vw;
+    }
+    .about {
+        height: 35vw;
+        width: 75vw;
+        padding: 0px 20px 0px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+    .about img {
+        display: block;
+        float: left;
+        padding-top: 2vw;
+        padding-right: 2vw;
+        height: 33vw;
+    }
+    .about h3 {
+        font-size: 1.3vw;
+        padding-top: 6vw;
+        margin-top: 0;
+    }
+    .about p {
+        font-size: 1vw;
+    }
+    .btn-mail {
+        float: left;
+        font-size: 1vw;
+        margin-top: 1vw;
+        width: 7vw;
+        height: 2.4vw;
     }
 }
