@@ -62,6 +62,14 @@ h3 {
     padding: 20px 20px 40px 20px;
 }
 
+.about h2 {
+    font-weight: 900;
+}
+
+.about h3 {
+    font-weight: 700;
+}
+
 .about p {
     text-align: justify;
 }
@@ -123,4 +131,7 @@ h3 {
     .header-author {
         width: 45vw;
     }
+}
+
+
 }
