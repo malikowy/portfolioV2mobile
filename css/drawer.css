@@ -500,12 +500,12 @@
 
 @media (min-width: 64em) {
     .drawer-container {
-        max-width: 35rem;
+        max-width: 25rem;
     }
 }
 
 @media (min-width: 75em) {
     .drawer-container {
-        max-width: 35rem;
+        max-width: 25rem;
     }
 }

@@ -1,0 +1,400 @@
+$color-white: #FFFFFF;
+$color-footer: #222222;
+$color-pink: #FF2B4A;
+$backgroundimg: "../img/background.png";
+$scaleimg: scale(1.2);
+/* FUNDAMENTAL*/
+* {
+    scroll-behavior: smooth;
+}
+
+body,
+dd,
+dt,
+html,
+li,
+p,
+td,
+th {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway';
+}
+
+h2 {
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+/* ID's*/
+#particles-js {
+    position: relative;
+    width   : 100%;
+}
+/* CLASSES*/
+.header {
+    background-image   : url($backgroundimg);
+    background-position: center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    text-align         : center;
+    position           : relative;
+
+    .header-author {
+        position: absolute;
+        top     : 0;
+        bottom  : 0;
+        left    : 0;
+        right   : 0;
+        margin  : auto;
+        padding : 5px;
+        width   : 50vw;
+        height  : 18vw;
+    }
+
+    .header-title {
+        border-top   : 3px;
+        border-bottom: 3px;
+        border-style : solid none solid none;
+        color        : $color-white;
+        padding      : 5px 0 8px;
+        font-size    : 6.1vw;
+        margin       : 0;
+        text-align   : center;
+    }
+
+    .header-subtitle {
+        color         : $color-white;
+        padding       : 0;
+        letter-spacing: 4px;
+        word-spacing  : 4px;
+        font-weight   : 400;
+        font-size     : 2.25vw;
+        margin-top    : 1vw;
+        margin-bottom : 0;
+    }
+}
+
+.about {
+    padding: 20px 20px 60px;
+
+    h3 {
+        padding-top: 1.75em;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    img {
+        display: none;
+    }
+
+    .btn-mail {
+        float           : right;
+        background-color: $color-pink;
+        border          : 0;
+        color           : $color-white;
+        font-size       : 1rem;
+        width           : 100px;
+        height          : 30px;
+        margin-top      : 3px;
+        margin-right    : 20px;
+        padding         : 4px 8px;
+
+        a {
+            text-decoration: none;
+            display        : block;
+            color          : $color-white;
+        }
+    }
+}
+
+.skills {
+    padding         : 20px;
+    text-align      : center;
+    background-color: rgba(246, 246, 246, 1);
+
+    h2 {
+        padding-top: 1.50em;
+    }
+
+    .skills-list {
+        list-style: none;
+        padding   : 0;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    .tooltip-text {
+        display: none;
+    }
+
+    .responsive-img {
+        height: 6vh;
+        margin: 5px;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+.works {
+    background-color: rgba(100, 203, 192, 1);
+    text-align      : center;
+    padding-bottom  : 20px;
+
+    h2 {
+        margin     : 0;
+        padding-top: 1.50em;
+    }
+
+    .gallery {
+        position  : relative;
+        display   : inline-block;
+        overflow  : hidden;
+        border    : 1vw solid #fff;
+        background: #111;
+        max-width : 100%;
+        margin    : 10px;
+        width     : 30vw;
+        height    : 15vw;
+
+        img {
+            display: block;
+            width  : 30vw;
+        }
+    }
+}
+
+.footer {
+    background-color: $color-footer;
+    color           : $color-white;
+    text-align      : center;
+
+    h2 {
+        margin-top : 0;
+        padding-top: 0.8em;
+    }
+
+    .contact-data {
+        padding-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        margin    : 0;
+        padding   : 0;
+
+        li {
+            display      : inline-block;
+            margin       : 10px 5px 10px 0;
+            border-right : 1px solid $color-white;
+            padding-right: 10px;
+        }
+
+        li:first-child {
+            padding-left: 15px;
+        }
+
+        li:last-child {
+            border: none;
+        }
+    }
+
+    a {
+        color          : $color-white;
+        text-decoration: none;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .copyrights {
+        padding-bottom: 30px;
+    }
+}
+/* MEDIA QUERY*/
+@media (min-width: 64em) {
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size  : 1.3vw;
+    }
+
+    .header-author {
+        width: 45vw;
+    }
+
+    .about {
+        height      : 35vw;
+        width       : 75vw;
+        padding     : 0 20px;
+        margin-left : auto;
+        margin-right: auto;
+        margin-top  : 60px;
+
+        img {
+            display      : block;
+            float        : left;
+            padding-top  : 2vw;
+            padding-right: 2vw;
+            height       : 33vw;
+        }
+
+        h3 {
+            font-size  : 1.3vw;
+            padding-top: 6vw;
+            margin-top : 0;
+        }
+
+        p {
+            font-size: 1vw;
+        }
+
+        .btn-mail {
+            float     : left;
+            font-size : 1vw;
+            margin-top: 1vw;
+            width     : 7vw;
+            height    : 2.4vw;
+        }
+
+        .btn-mail:hover {
+            background-color: rgba(255,43,74,.7);
+        }
+    }
+
+    .skills {
+        height        : 35vw;
+        padding-top   : 60px;
+        padding-bottom: 60px;
+    }
+
+    .works {
+        height        : 35vw;
+        padding-top   : 60px;
+        padding-bottom: 60px;
+    }
+
+    .works-container {
+        width: 75vw;
+    }
+    /* GALLERY SETTINGS */
+    .gallery {
+        border    : 1em solid #fff;
+        background: #111;
+        width     : 18vw;
+        height    : 10vw;
+
+        img {
+            -webkit-transition: all 0.6s ease-in-out;
+            transition        : all 0.6s ease-in-out;
+            width             : 20vw;
+        }
+
+        &:after {
+            content           : '';
+            height            : 100%;
+            position          : absolute;
+            text-align        : center;
+            -webkit-transition: all 0.6s ease-in-out;
+            transition        : all 0.6s ease-in-out;
+            width             : 100%;
+        }
+
+        &:before {
+            content           : '';
+            height            : 100%;
+            position          : absolute;
+            text-align        : center;
+            -webkit-transition: all 0.6s ease-in-out;
+            transition        : all 0.6s ease-in-out;
+            width             : 100%;
+        }
+    }
+
+    .gallery.rotate {
+        &:before {
+            background              : rgba(100, 203, 192, .5);
+            top                     : 0;
+            left                    : 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin        : 0 0;
+            -webkit-transform       : rotateZ(-90deg);
+            transform               : rotateZ(-90deg);
+        }
+
+        &:after {
+            content                 : "\f09b";
+            color                   : #fff;
+            font-family             : FontAwesome;
+            font-size               : 2em;
+            background              : rgba(100, 203, 192, .9);
+            top                     : 50%;
+            left                    : 50%;
+            width                   : 2em;
+            height                  : 2em;
+            margin                  : -1em 0 0 -1em;
+            line-height             : 2em;
+            -webkit-transform-origin: -4em -4em;
+            transform-origin        : -4em -4em;
+            -webkit-transform       : rotateZ(-90deg);
+            transform               : rotateZ(-90deg);
+        }
+    }
+
+    .gallery.rotate.left:after,
+    .gallery.rotate.left:before {
+        -webkit-transform: rotateZ(90deg);
+        transform        : rotateZ(90deg);
+    }
+
+    .gallery.rotate:hover:after,
+    .gallery.rotate:hover:before {
+        -webkit-transform: rotateZ(0);
+        transform        : rotateZ(0);
+    }
+    /* GALLERY SETTINGS END*/
+    .hidden {
+        display: inline-block;
+    }
+
+    .footer {
+        height     : 35vw;
+        padding-top: 60px;
+
+        .fa {
+            -webkit-transition: transform 0.3s ease-in-out;
+            -webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition        : -webkit-transform 0.3s ease-in-out;
+            transition        : transform 0.3s ease-in-out;
+            transition        : transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+        }
+
+        .fa:hover {
+            color            : $color-pink;
+            -webkit-transform: $scaleimg;
+            -webkit-transform: $scaleimg;
+            transform        : $scaleimg;
+        }
+
+        .copyrights {
+            margin-top: 100px;
+        }
+    }
+}
