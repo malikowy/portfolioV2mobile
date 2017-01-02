@@ -107,7 +107,7 @@ h3 {
   .skills .skills-list__img {
     height: 6vh;
     margin: 5px; }
-  .skills .skills-list__tooltip {
+  .skills .skills-list__tooltips-text {
     display: none; }
 
 .works {
@@ -157,10 +157,10 @@ h3 {
       margin: 10px 5px 10px 0;
       border-right: 1px solid #FFFFFF;
       padding-right: 10px; }
-    .contact ul li:first-child {
-      padding-left: 15px; }
-    .contact ul li:last-child {
-      border: none; }
+      .contact ul li:first-child {
+        padding-left: 15px; }
+      .contact ul li:last-child {
+        border: none; }
   .contact a {
     color: #FFFFFF;
     text-decoration: none; }
@@ -212,7 +212,39 @@ h3 {
   .skills {
     height: 35vw;
     padding-top: 60px;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    /* tooltips SETTTINGS */ }
+    .skills a.skills-list__tooltips {
+      position: relative;
+      display: inline; }
+    .skills a.skills-list__tooltips span {
+      position: absolute;
+      width: 110px;
+      color: #FFFFFF;
+      background: black;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      visibility: hidden;
+      border-radius: 3px; }
+    .skills a.skills-list__tooltips span:after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -8px;
+      width: 0;
+      height: 0;
+      border-bottom: 8px solid black;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent; }
+    .skills a:hover.skills-list__tooltips span {
+      visibility: visible;
+      opacity: 0.7;
+      top: 35px;
+      left: 50%;
+      margin-left: -55px;
+      z-index: 999; }
 
   .works {
     height: 35vw;
@@ -291,11 +323,11 @@ h3 {
       transition: -webkit-transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
-    .contact .fa:hover {
-      color: #FF2B4A;
-      -webkit-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2); }
+      .contact .fa:hover {
+        color: #FF2B4A;
+        -webkit-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); }
     .contact .contact-list__rights {
       padding-top: 100px; }
     .contact .contact-list__update {

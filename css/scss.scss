@@ -143,7 +143,7 @@ h3 {
         margin: 5px;
     }
 
-    .skills-list__tooltip {
+    .skills-list__tooltips-text {
         display: none;
     }
 }
@@ -210,14 +210,14 @@ h3 {
             margin       : 10px 5px 10px 0;
             border-right : 1px solid $color-white;
             padding-right: 10px;
-        }
 
-        li:first-child {
-            padding-left: 15px;
-        }
+            &:first-child {
+                padding-left: 15px;
+            }
 
-        li:last-child {
-            border: none;
+            &:last-child {
+                border: none;
+            }
         }
     }
 
@@ -295,6 +295,47 @@ h3 {
         height        : 35vw;
         padding-top   : 60px;
         padding-bottom: 60px;
+        /* tooltips SETTTINGS */
+        a {
+            &.skills-list__tooltips {
+                position: relative;
+                display : inline;
+            }
+
+            &.skills-list__tooltips span {
+                position     : absolute;
+                width        : 110px;
+                color        : #FFFFFF;
+                background   : rgba(0, 0, 0, 1);
+                height       : 24px;
+                line-height  : 24px;
+                text-align   : center;
+                visibility   : hidden;
+                border-radius: 3px;
+            }
+
+            &.skills-list__tooltips span:after {
+                content      : '';
+                position     : absolute;
+                bottom       : 100%;
+                left         : 50%;
+                margin-left  : -8px;
+                width        : 0;
+                height       : 0;
+                border-bottom: 8px solid rgba(0, 0, 0, 1);
+                border-right : 8px solid transparent;
+                border-left  : 8px solid transparent;
+            }
+
+            &:hover.skills-list__tooltips span {
+                visibility : visible;
+                opacity    : 0.7;
+                top        : 35px;
+                left       : 50%;
+                margin-left: -55px;
+                z-index    : 999;
+            }
+        }
     }
 
     .works {
@@ -394,13 +435,13 @@ h3 {
             transition        : -webkit-transform 0.3s ease-in-out;
             transition        : transform 0.3s ease-in-out;
             transition        : transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-        }
 
-        .fa:hover {
-            color            : $color-pink;
-            -webkit-transform: $scaleimg;
-            -webkit-transform: $scaleimg;
-            transform        : $scaleimg;
+            &:hover {
+                color            : $color-pink;
+                -webkit-transform: $scaleimg;
+                -webkit-transform: $scaleimg;
+                transform        : $scaleimg;
+            }
         }
 
         .contact-list__rights {
