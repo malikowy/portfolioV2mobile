@@ -50,7 +50,7 @@ h3 {
     padding: 5px;
     width: 50vw;
     height: 18vw; }
-  .header .header-title {
+  .header .header-author__title {
     border-top: 3px;
     border-bottom: 3px;
     border-style: solid none solid none;
@@ -59,7 +59,7 @@ h3 {
     font-size: 6.1vw;
     margin: 0;
     text-align: center; }
-  .header .header-subtitle {
+  .header .header-author__subtitle {
     color: #FFFFFF;
     padding: 0;
     letter-spacing: 4px;
@@ -104,12 +104,10 @@ h3 {
     padding: 0; }
     .skills .skills-list li {
       display: inline-block; }
-  .skills .tooltip-text {
-    display: none; }
-  .skills .responsive-img {
+  .skills .skills-list__img {
     height: 6vh;
     margin: 5px; }
-  .skills .hidden {
+  .skills .skills-list__tooltip {
     display: none; }
 
 .works {
@@ -127,7 +125,7 @@ h3 {
     margin: 0;
     padding-top: 2.7em;
     padding-bottom: 0.5em; }
-  .works .gallery {
+  .works .works-container__gallery {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -137,39 +135,41 @@ h3 {
     margin: 10px;
     width: 30vw;
     height: 15vw; }
-    .works .gallery img {
+    .works .works-container__gallery img {
       display: block;
       width: 30vw; }
 
-.footer {
+.contact {
   background-color: #222222;
   color: #FFFFFF;
   text-align: center; }
-  .footer h2 {
+  .contact h2 {
     margin-top: 0;
     padding-top: 0.8em; }
-  .footer .contact-data {
+  .contact .contact-data {
     padding-bottom: 15px; }
-  .footer ul {
+  .contact ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-    .footer ul li {
+    .contact ul li {
       display: inline-block;
       margin: 10px 5px 10px 0;
       border-right: 1px solid #FFFFFF;
       padding-right: 10px; }
-    .footer ul li:first-child {
+    .contact ul li:first-child {
       padding-left: 15px; }
-    .footer ul li:last-child {
+    .contact ul li:last-child {
       border: none; }
-  .footer a {
+  .contact a {
     color: #FFFFFF;
     text-decoration: none; }
-  .footer p {
+  .contact p {
     margin-bottom: 0; }
-  .footer .copyrights {
+  .contact .contact-list__rights {
     padding-bottom: 30px; }
+  .contact .contact-list__update {
+    padding-bottom: 5px; }
 
 /* MEDIA QUERY NORMAL SCREEN */
 @media (min-width: 64em) {
@@ -217,10 +217,8 @@ h3 {
   .works {
     height: 35vw;
     padding-top: 60px;
-    padding-bottom: 60px;
-    /* GALLERY SETTINGS */
-    /* GALLERY SETTINGS END*/ }
-    .works .gallery {
+    padding-bottom: 60px; }
+    .works .works-container__gallery {
       position: relative;
       display: inline-block;
       overflow: hidden;
@@ -229,14 +227,13 @@ h3 {
       max-width: 100%;
       margin: 10px;
       width: 18vw;
-      height: 10vw;
-      margin: duza; }
-      .works .gallery img {
+      height: 10vw; }
+      .works .works-container__gallery img {
         display: block;
         -webkit-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out;
         width: 20vw; }
-      .works .gallery:after {
+      .works .works-container__gallery:after {
         content: '';
         height: 100%;
         position: absolute;
@@ -244,7 +241,7 @@ h3 {
         -webkit-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out;
         width: 100%; }
-      .works .gallery:before {
+      .works .works-container__gallery:before {
         content: '';
         height: 100%;
         position: absolute;
@@ -252,7 +249,7 @@ h3 {
         -webkit-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out;
         width: 100%; }
-    .works .gallery.rotate:before {
+    .works .works-container__gallery.rotate:before {
       background: rgba(100, 203, 192, 0.5);
       top: 0;
       left: 0;
@@ -260,7 +257,7 @@ h3 {
       transform-origin: 0 0;
       -webkit-transform: rotateZ(-90deg);
       transform: rotateZ(-90deg); }
-    .works .gallery.rotate:after {
+    .works .works-container__gallery.rotate:after {
       content: "\f09b";
       color: #fff;
       font-family: FontAwesome;
@@ -276,30 +273,32 @@ h3 {
       transform-origin: -4em -4em;
       -webkit-transform: rotateZ(-90deg);
       transform: rotateZ(-90deg); }
-    .works .gallery.rotate.left:after,
-    .works .gallery.rotate.left:before {
+    .works .works-container__gallery.rotate.left:after,
+    .works .works-container__gallery.rotate.left:before {
       -webkit-transform: rotateZ(90deg);
       transform: rotateZ(90deg); }
-    .works .gallery.rotate:hover:after,
-    .works .gallery.rotate:hover:before {
+    .works .works-container__gallery.rotate:hover:after,
+    .works .works-container__gallery.rotate:hover:before {
       -webkit-transform: rotateZ(0);
       transform: rotateZ(0); }
 
-  .footer {
+  .contact {
     height: 35vw;
     padding-top: 60px; }
-    .footer .fa {
+    .contact .fa {
       -webkit-transition: transform 0.3s ease-in-out;
       -webkit-transition: -webkit-transform 0.3s ease-in-out;
       transition: -webkit-transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
-    .footer .fa:hover {
+    .contact .fa:hover {
       color: #FF2B4A;
       -webkit-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
-    .footer .copyrights {
-      margin-top: 100px; } }
+    .contact .contact-list__rights {
+      padding-top: 100px; }
+    .contact .contact-list__update {
+      padding-bottom: 10px; } }
 
 /*# sourceMappingURL=css.css.map */
