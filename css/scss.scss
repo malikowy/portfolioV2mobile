@@ -322,6 +322,10 @@ h3 {
         padding-top   : 60px;
         padding-bottom: 60px;
 
+        h2 {
+            padding-top: 0;
+        }
+
         .skills-list {
             li {
                 display: inline-block;
@@ -382,6 +386,11 @@ h3 {
         padding-bottom: 60px;
 
         .works-container {
+            h2 {
+                padding-top   : 0.7em;
+                padding-bottom: 1.5em;
+            }
+
             .works-container_gallery {
                 position  : relative;
                 display   : inline-block;

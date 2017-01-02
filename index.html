@@ -57,7 +57,7 @@
             <section class="header">
                 <div id="particles-js"></div>
                 <div class="header-author">
-                    <h1 class="header-author__title">Gabriel&nbsp;Ignatiuk</h1>
+                    <div class="typed-text header-author__title"></div>
                     <h2 class="header-author__subtitle">#Junior Front-End Developer</h2>
                 </div>
             </section>
@@ -70,8 +70,8 @@
                 <p>Po dwóch latach przerwy wznowiłem działalność w temacie tworzenia stron internetowych. Początkowo przypominałem sobie nabyte wiadomości na temat HTML i CSS. Dodatkowo zagłębiłem się w HTML5 i CSS3 oraz zacząłem korzystać z preprocesora
                     SCSS. Kolejnym językiem, którego chciałbym się nauczyć jest JavaScript.
                 </p>
-                <button class="btn-mail scrollTo">
-                    <a href="#contact">#Kontakt</a>
+                <button class="btn-mail">
+                    <a class="scrollTo" href="#contact">#Kontakt</a>
                 </button>
             </section>
             <section class="skills" id="skills">
@@ -263,6 +263,20 @@
         <!-- PARTICLES SCRIPT -->
         <script src="./js/particles.min.js"></script>
         <script src="./js/app.js"></script>
+
+        <!-- TYPED.JS -->
+        <script src="./js/typed.js"></script>
+        <script>
+            $(function() {
+                $(".typed-text").typed({
+                    strings: ["M4l", "Malikowyy", "Gabriel Ignatiuk"],
+                    typeSpeed: 50,
+                    backSpeed: 50,
+                    backDelay: 100,
+                    showCursor: false,
+                });
+            });
+        </script>
     </body>
 
 </html>

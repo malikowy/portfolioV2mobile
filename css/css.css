@@ -234,6 +234,8 @@ h3 {
     height: 35vw;
     padding-top: 60px;
     padding-bottom: 60px; }
+    .skills h2 {
+      padding-top: 0; }
     .skills .skills-list li {
       display: inline-block;
       padding: 0 8px; }
@@ -276,6 +278,9 @@ h3 {
     height: 35vw;
     padding-top: 60px;
     padding-bottom: 60px; }
+    .works .works-container h2 {
+      padding-top: 0.7em;
+      padding-bottom: 1.5em; }
     .works .works-container .works-container_gallery {
       position: relative;
       display: inline-block;
