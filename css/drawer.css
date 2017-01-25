@@ -367,6 +367,9 @@
 }
 
 @media (min-width: 64em) {
+    .drawer-navbar .drawer-brand {
+        display: none;
+    }
     .drawer-navbar {
         height: 3.75rem;
         border-bottom: 1px solid #ddd;
